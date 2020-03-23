@@ -1,14 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance = null;
     public BoardManager boardManager;
-    
     
     void Awake()
     {
