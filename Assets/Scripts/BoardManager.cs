@@ -10,12 +10,15 @@ public class BoardManager : MonoBehaviour
     public GameObject gameBoard;
     public Spawner spawner;
     private int _nextOpenTileId = 1;
+    private bool _doOnce;
+    
     public Dictionary<int,Tile> tileDict = new Dictionary<int, Tile>();
     public Dictionary<int, Piece> pieceDict = new Dictionary<int, Piece>();
     private List<int> toSearch = new List<int>();
     private List<int> searching = new List<int>();
     private List<int> searched = new List<int>();
     public List<Connection> connections = new List<Connection>();
+    
 
     public void InitGameBoard()
     {
@@ -30,16 +33,29 @@ public class BoardManager : MonoBehaviour
         for (var i = 0; i < gameBoard.transform.childCount; i++)
         {
             spawner.SpawnPiece(Random.Range(0,spawner.colourCount),i+1);
-            
         }
     }
 
     public void UpdateTileOccupants()
     {
-        foreach (var piece in pieceDict.Values)
+        foreach (var tile in tileDict.Values.Where(tile => tile.transform.childCount < 1))
         {
-            tileDict[piece.currentTileId].occupantId = piece.pieceId;
+            tile.occupantId = 0;
         }
+    }
+
+    public void UpdateBoardState()
+    {
+        UpdateTileOccupants();
+        UpdateNeighborPieces();
+        connections.Clear();
+        UpdatePieceConnections(1, true);
+
+    }
+
+    private bool CheckPiecesToDrop()
+    {
+        return pieceDict.Values.Any(piece => piece.IsDroppable());
     }
 
     public void InitTileConnections()
@@ -65,9 +81,7 @@ public class BoardManager : MonoBehaviour
             
         }
         UpdateTileOccupants();
-        UpdateNeighborPieces();
-        connections.Clear();
-        UpdatePieceConnections(1, true);
+        UpdateBoardState();
     }
 
     public void UpdateNeighborPieces()
@@ -150,26 +164,78 @@ public class BoardManager : MonoBehaviour
         }
     }
     
-    public void ResolveMatch(int pieceId)
+    public IEnumerator ResolveMatch(int pieceId)
     {
-        foreach (var connection in connections)
+        for (var i = connections.Count - 1; i >= 0; i--)
         {
+            var connection = connections[i];
+            
             if (connection.Match.Contains(pieceId))
             {
-                DestroyConnection(connection);
+                StartCoroutine( DestroyConnection(connection));
+                break;
             }
         }
         
-        //go to resolution of the whole board
-        //drop pieces
-        //spawn new ones
+        //todo send signal to all neighbors of all destroyed pieces
+        yield return null;
     }
 
-    private void DestroyConnection(Connection connection)
+    private IEnumerator ResolveBoard()
+    {
+       
+        while (CheckPiecesToDrop())
+        {
+            foreach (var piece in pieceDict.Values.Where(piece => piece.IsDroppable()))
+            {
+                var southTileId = tileDict[piece.currentTileId].neighborTileIds[2];
+                
+                yield return StartCoroutine(MovePieceToTile(piece.pieceId, southTileId));
+            }
+            
+            UpdateBoardState();
+
+            foreach (var tile in tileDict.Values.Where(tile => tile.isSpawner))
+            {
+                tile.SpawnPiece();
+            }
+            
+            UpdateBoardState();
+        }
+
+
+        yield return null;
+    }
+
+    private IEnumerator MovePieceToTile(int pieceId, int tileId)
+    {
+        var piece = pieceDict[pieceId];
+        var tile = tileDict[tileId];
+
+        piece.transform.position = tile.transform.position;
+        
+        piece.transform.SetParent(tile.transform);
+        piece.currentTileId = tileId;
+        tile.occupantId = pieceId;
+
+        yield return null;
+    }
+
+    private IEnumerator DestroyConnection(Connection connection)
     {
         foreach (var pieceId in connection.Match)
         {
-            Destroy(pieceDict[pieceId].transform.gameObject);
+            var piece = pieceDict[pieceId];
+            pieceDict.Remove(pieceId);
+            tileDict[piece.currentTileId].occupantId = 0;
+            Destroy(piece.transform.gameObject);
         }
+        
+        connections.Remove(connection);
+        connection = null;
+        
+        UpdateBoardState();
+        
+        yield return StartCoroutine(ResolveBoard());
     }
 }

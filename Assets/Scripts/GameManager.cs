@@ -8,8 +8,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance = null;
     public BoardManager boardManager;
-
-    public bool boardResolving;
     
     
     void Awake()
@@ -29,8 +27,4 @@ public class GameManager : MonoBehaviour
         boardManager.InitTileConnections();
     }
     
-    void Update()
-    {
-        
-    }
 }

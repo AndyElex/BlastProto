@@ -5,10 +5,24 @@ using UnityEngine;
 
 public class Piece_Regular : Piece
 {
+    public bool isBeingDestroyed = false;
+    private BoardManager _boardManager;
+
     
+    private void Update()
+    {
+        
+    }
+    
+    public override bool IsDroppable()
+    {
+        return neighborPieceIds[2] < 1 && _boardManager.tileDict[currentTileId].neighborTileIds[2] > 0;
+    }
 
     private void Awake()
     {
+        _boardManager = GameManager.Instance.boardManager;
+        
         switch (colourCode)
         {
             case 0:
@@ -39,9 +53,12 @@ public class Piece_Regular : Piece
 
     public void OnMouseUp()
     {
-        if (!GameManager.Instance.boardResolving)
-            GameManager.Instance.boardManager.ResolveMatch(pieceId);
+        StartCoroutine( _boardManager.ResolveMatch(pieceId));
     }
 
-
+    private void OnDestroy()
+    {
+        isBeingDestroyed = true;
+        
+    }
 }

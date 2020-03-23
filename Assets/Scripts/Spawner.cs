@@ -34,7 +34,8 @@ public class Spawner : MonoBehaviour
             newPiece.pieceId = _nextPieceId;
             newPiece.currentTileId = tileId;
             _nextPieceId++;
-            
+
+            bm.tileDict[tileId].occupantId = newPiece.pieceId;
             bm.pieceDict.Add(newPiece.pieceId, newPiece);
         }
     }

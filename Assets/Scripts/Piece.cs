@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
 using UnityEngine;
@@ -13,5 +14,20 @@ public class Piece : MonoBehaviour
     public int[] size; //[X, Y]
     public int currentTileId;
     public int[] neighborPieceIds; //[n,e,s,w]
-    public List<int> connectedPieceIds = new List<int>();
+
+    protected virtual void OnNeighborDestroyed()
+    {
+        
+    }
+
+    public virtual bool IsDroppable()
+    {
+        return false;
+    }
+    
+
+    private void OnDestroy()
+    {
+        
+    }
 }

@@ -169,6 +169,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &11195720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -277,6 +278,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &36054480
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -385,6 +387,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &54680901
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -493,6 +496,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &79605069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -601,6 +605,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 1
 --- !u!65 &107533596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -709,6 +714,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &145854246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -817,6 +823,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &152529449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -925,6 +932,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &165681312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1033,6 +1041,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &221757731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1141,6 +1150,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &251996450
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1249,6 +1259,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &262320048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1357,6 +1368,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &269671382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1465,6 +1477,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &297794925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1573,6 +1586,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 1
 --- !u!65 &320703871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1681,6 +1695,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &369796143
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1789,6 +1804,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &386521282
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1897,6 +1913,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &398757609
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2005,6 +2022,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &460073010
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2113,6 +2131,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &480687896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2221,6 +2240,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &488115770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2329,6 +2349,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &509882422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2437,6 +2458,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 1
 --- !u!65 &516517597
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2545,6 +2567,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &550271524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2650,7 +2673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnProbRegPiece: 010000000100000001000000010000000100000001000000
-  colourCount: 3
+  colourCount: 6
   pieces:
   - {fileID: 7537353081886433272, guid: b85165f9d201a0244853f66802e35b97, type: 3}
   - {fileID: 773398011982223061, guid: a3eebd51714c6f04281d30129dc4df45, type: 3}
@@ -2685,7 +2708,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boardManager: {fileID: 615837196}
-  boardResolving: 0
 --- !u!1 &626063972
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,6 +2757,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &626063975
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2843,6 +2866,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &682369804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3153,6 +3177,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &791291228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3261,6 +3286,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 1
 --- !u!65 &826567001
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3369,6 +3395,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &834594032
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3477,6 +3504,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &873868448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3585,6 +3613,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &886375772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3776,6 +3805,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &988227137
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3884,6 +3914,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1038623677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3992,6 +4023,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 1
 --- !u!65 &1042253368
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4100,6 +4132,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1053677724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4208,6 +4241,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1055675558
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4316,6 +4350,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1058017825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4424,6 +4459,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 1
 --- !u!65 &1097446656
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4532,6 +4568,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1110870792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4640,6 +4677,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1134990148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4748,6 +4786,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1179530882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4856,6 +4895,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1194979887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4964,6 +5004,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1200186107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5072,6 +5113,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1202946019
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5180,6 +5222,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1213478345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5288,6 +5331,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1214799588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5396,6 +5440,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1225547658
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5504,6 +5549,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1252752044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5612,6 +5658,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1280601612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5720,6 +5767,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1289981130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5828,6 +5876,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1291104351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5936,6 +5985,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1294238984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6044,6 +6094,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1306681423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6152,6 +6203,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1337189266
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6260,6 +6312,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1342006026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6368,6 +6421,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 1
 --- !u!65 &1353474745
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6476,6 +6530,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 1
 --- !u!65 &1364579471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6584,6 +6639,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1371179484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6692,6 +6748,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1386442843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6800,6 +6857,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 1
 --- !u!65 &1428368543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6908,6 +6966,7 @@ MonoBehaviour:
   tileId: 1
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1456830107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7016,6 +7075,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1465174941
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7124,6 +7184,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1484184503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7232,6 +7293,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1534625607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7340,6 +7402,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1547087371
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7448,6 +7511,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1643939588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7556,6 +7620,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1645335519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7664,6 +7729,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1697895495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7772,6 +7838,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1706823197
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7880,6 +7947,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1719156291
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7988,6 +8056,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1760363925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8096,6 +8165,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1772033517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8204,6 +8274,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1773626728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8312,6 +8383,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1790964911
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8420,6 +8492,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1795500446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8528,6 +8601,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1887756325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8636,6 +8710,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1903051410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8744,6 +8819,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1963137473
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8852,6 +8928,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &1981881444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8960,6 +9037,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &2011484505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9068,6 +9146,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &2017289496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9176,6 +9255,7 @@ MonoBehaviour:
   tileId: 0
   occupantId: 0
   neighborTileIds: 00000000000000000000000000000000
+  isSpawner: 0
 --- !u!65 &2050490606
 BoxCollider:
   m_ObjectHideFlags: 0
