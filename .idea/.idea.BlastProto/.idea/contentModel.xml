@@ -10,8 +10,11 @@
           <e p="Blocker.cs" t="Include" />
           <e p="BoardManager.cs" t="Include" />
           <e p="Connection.cs" t="Include" />
+          <e p="Effect.cs" t="Include" />
+          <e p="Effect_LineBlastVert.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Piece.cs" t="Include" />
+          <e p="Piece_PowerUp.cs" t="Include" />
           <e p="Piece_Regular.cs" t="Include" />
           <e p="Spawner.cs" t="Include" />
           <e p="Tile.cs" t="Include" />

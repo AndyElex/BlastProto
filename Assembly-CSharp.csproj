@@ -59,8 +59,11 @@
      <Compile Include="Assets\Scripts\Blocker.cs" />
      <Compile Include="Assets\Scripts\BoardManager.cs" />
      <Compile Include="Assets\Scripts\Connection.cs" />
+     <Compile Include="Assets\Scripts\Effect.cs" />
+     <Compile Include="Assets\Scripts\Effect_LineBlastVert.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Piece.cs" />
+     <Compile Include="Assets\Scripts\Piece_PowerUp.cs" />
      <Compile Include="Assets\Scripts\Piece_Regular.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\Tile.cs" />

@@ -4,12 +4,6 @@ public class Piece_Regular : Piece
 {
     public bool isBeingDestroyed = false;
     private BoardManager _boardManager;
-
-    
-    private void Update()
-    {
-        
-    }
     
     public override bool IsDroppable()
     {

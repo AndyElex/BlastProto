@@ -18,7 +18,11 @@ public class BoardManager : MonoBehaviour
     private List<int> searching = new List<int>();
     private List<int> searched = new List<int>();
     public List<Connection> connections = new List<Connection>();
-    
+
+    private void Update()
+    {
+        /*UpdateBoardState();*/
+    }
 
     public void InitGameBoard()
     {
@@ -49,8 +53,7 @@ public class BoardManager : MonoBehaviour
         UpdateTileOccupants();
         UpdateNeighborPieces();
         connections.Clear();
-        UpdatePieceConnections(1, true);
-
+        UpdatePieceConnections(pieceDict.Values.First().pieceId, true);
     }
 
     private bool CheckPiecesToDrop()
@@ -172,7 +175,7 @@ public class BoardManager : MonoBehaviour
             
             if (connection.Match.Contains(pieceId))
             {
-                StartCoroutine( DestroyConnection(connection));
+                StartCoroutine( DestroyConnection(connection, pieceId));
                 break;
             }
         }
@@ -181,7 +184,7 @@ public class BoardManager : MonoBehaviour
         yield return null;
     }
 
-    private IEnumerator ResolveBoard()
+    public IEnumerator ResolveBoard()
     {
        
         while (CheckPiecesToDrop())
@@ -221,21 +224,28 @@ public class BoardManager : MonoBehaviour
         yield return null;
     }
 
-    private IEnumerator DestroyConnection(Connection connection)
+    private IEnumerator DestroyConnection(Connection connection, int originPieceId)
     {
+        var connectionLength = connection.Match.Count;
+        var originTileId = pieceDict[originPieceId].currentTileId;
+        
         foreach (var pieceId in connection.Match)
         {
-            var piece = pieceDict[pieceId];
-            pieceDict.Remove(pieceId);
-            tileDict[piece.currentTileId].occupantId = 0;
-            Destroy(piece.transform.gameObject);
+            DestroyPiece(pieceId);
         }
         
         connections.Remove(connection);
-        connection = null;
+        yield return StartCoroutine(spawner.SpawnPowerUp(connectionLength, originTileId));
         
         UpdateBoardState();
-        
         yield return StartCoroutine(ResolveBoard());
+    }
+
+    public void DestroyPiece(int pieceId)
+    {
+        var piece = pieceDict[pieceId];
+        pieceDict.Remove(pieceId);
+        tileDict[piece.currentTileId].occupantId = 0;
+        Destroy(piece.transform.gameObject);
     }
 }

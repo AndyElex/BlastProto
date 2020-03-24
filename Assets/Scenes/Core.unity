@@ -2681,6 +2681,7 @@ MonoBehaviour:
   - {fileID: 2627513439303884848, guid: e1d4bb56d53964b45a1e957893058948, type: 3}
   - {fileID: 8393190435583899592, guid: 79c6fae63079e004187efc8cbaa6b938, type: 3}
   - {fileID: 8353404926443783444, guid: 59bfe20f789e2bb4997ba52cf02b932a, type: 3}
+  powerUps: []
 --- !u!114 &615837196
 MonoBehaviour:
   m_ObjectHideFlags: 0

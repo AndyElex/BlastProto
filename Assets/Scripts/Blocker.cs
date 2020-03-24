@@ -1,8 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
 
-public class Piece_Blocker : Piece
+public class Blocker : Piece
 {
-    
+    private BoardManager _boardManager;
+
+
+    private void Awake()
+    {
+        _boardManager = GameManager.Instance.boardManager;
+    }
+
+    public void OnMouseUp()
+    {
+        StartCoroutine( _boardManager.ResolveMatch(pieceId));
+    }
+
+    private void OnDestroy()
+    {
+        
+    }
 }

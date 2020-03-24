@@ -2,9 +2,9 @@
 
 public class Piece : MonoBehaviour
 {
-    public bool isMovable;
     public bool isMatchable;
     public bool isSpawnable;
+    public bool isEffectBlocking;
     public int colourCode;
     public int pieceId;
     public int[] size; //[X, Y]
@@ -21,9 +21,5 @@ public class Piece : MonoBehaviour
         return false;
     }
     
-
-    private void OnDestroy()
-    {
-        
-    }
+    
 }
