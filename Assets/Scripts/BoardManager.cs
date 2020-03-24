@@ -61,6 +61,11 @@ public class BoardManager : MonoBehaviour
         return pieceDict.Values.Any(piece => piece.IsDroppable());
     }
 
+    private bool CheckPiecesToSpawn()
+    {
+        return tileDict.Values.Any(tile => tile.isSpawner && tile.occupantId == 0);
+    }
+
     public void InitTileConnections()
     {
         foreach (var tile in tileDict.Values)
@@ -187,7 +192,7 @@ public class BoardManager : MonoBehaviour
     public IEnumerator ResolveBoard()
     {
        
-        while (CheckPiecesToDrop())
+        while (CheckPiecesToDrop() || CheckPiecesToSpawn())
         {
             foreach (var piece in pieceDict.Values.Where(piece => piece.IsDroppable()))
             {
