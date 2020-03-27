@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\BoardManager.cs" />
      <Compile Include="Assets\Scripts\Connection.cs" />
      <Compile Include="Assets\Scripts\Effect.cs" />
+     <Compile Include="Assets\Scripts\Effect_LineBlastHoriz.cs" />
      <Compile Include="Assets\Scripts\Effect_LineBlastVert.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Piece.cs" />

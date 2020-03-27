@@ -11,6 +11,7 @@
           <e p="BoardManager.cs" t="Include" />
           <e p="Connection.cs" t="Include" />
           <e p="Effect.cs" t="Include" />
+          <e p="Effect_LineBlastHoriz.cs" t="Include" />
           <e p="Effect_LineBlastVert.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Piece.cs" t="Include" />

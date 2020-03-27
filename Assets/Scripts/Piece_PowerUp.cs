@@ -16,6 +16,7 @@
     private void OnMouseUp()
     {
         Destroy(transform.gameObject);
+        StartCoroutine( _boardManager.ResolveMatch(pieceId));
     }
 
     private void OnDestroy()
