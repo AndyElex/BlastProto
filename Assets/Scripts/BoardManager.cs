@@ -21,7 +21,7 @@ public class BoardManager : MonoBehaviour
 
     private void Update()
     {
-        /*UpdateBoardState();*/
+       UpdateBoardState();
     }
 
     public void InitGameBoard()
