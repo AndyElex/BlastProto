@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 9092774121366668953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.4}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,6 +56,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -112,4 +113,4 @@ MonoBehaviour:
   pieceId: 0
   size: 0100000001000000
   currentTileId: 0
-  neighborPieceIds: 
+  neighborPieceIds: 00000000000000000000000000000000

@@ -33,18 +33,18 @@
       <list>
         <option value="$USER_HOME$/Downloads/level_31.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Connection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Piece_Regular.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp_LineVertical.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Effect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Piece.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Blocker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Effect_LineBlastVert.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BoardManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Effect_LineBlastHoriz.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Piece_PowerUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Piece.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Piece_Regular.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoardManager.cs" />
       </list>
     </option>
   </component>
@@ -98,7 +98,7 @@
       <workItem from="1584771226434" duration="36777000" />
       <workItem from="1585047461010" duration="44000" />
       <workItem from="1585292863712" duration="5799000" />
-      <workItem from="1585537859704" duration="1168000" />
+      <workItem from="1585537859704" duration="7036000" />
     </task>
     <servers />
   </component>

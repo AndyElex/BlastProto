@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance = null;
     public BoardManager boardManager;
+    public static bool PaintMode;
+    public GameObject paintObject;
     
     void Awake()
     {
@@ -21,5 +24,18 @@ public class GameManager : MonoBehaviour
         boardManager.InitGameBoard();
         boardManager.InitTileConnections();
     }
-    
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            PaintMode = false;
+        }
+    }
+
+    public void ActivatePaintMode(GameObject objectToPaint)
+    {
+        paintObject = objectToPaint;
+        PaintMode = true;
+    }
 }

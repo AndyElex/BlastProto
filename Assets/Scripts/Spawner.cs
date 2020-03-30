@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -19,6 +20,11 @@ public class Spawner : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        
+    }
+
     public void SpawnPiece(int typeId, int tileId)
     {
         var bm = GameManager.Instance.boardManager;
@@ -36,11 +42,37 @@ public class Spawner : MonoBehaviour
 
             bm.tileDict[tileId].occupantId = newPiece.pieceId;
             bm.pieceDict.Add(newPiece.pieceId, newPiece);
+            
+            bm.UpdateBoardState();
         }
+    }
+
+    public void PaintPiece(int tileId)
+    {
+        var bm = GameManager.Instance.boardManager;
+        var currentTile = bm.tileDict[tileId];
+        var currentPiece = bm.pieceDict[currentTile.occupantId];
+
+        bm.pieceDict.Remove(currentPiece.pieceId);
+        Destroy(currentPiece.transform.gameObject);
+
+        var newPiece = Instantiate(GameManager.Instance.paintObject, currentTile.transform.position, Quaternion.identity).GetComponent<Piece>();
+        newPiece.transform.SetParent(currentTile.transform);
+        
+        newPiece.pieceId = _nextPieceId;
+        _nextPieceId++;
+        newPiece.currentTileId = tileId;
+        bm.pieceDict.Add(newPiece.pieceId, newPiece);
+
+        bm.tileDict[tileId].occupantId = newPiece.pieceId;
+        
+        bm.UpdateBoardState();
     }
 
     public IEnumerator SpawnPowerUp(int matchSize, int tileId)
     {
+        var bm = GameManager.Instance.boardManager;
+        
         switch(matchSize)
         {
             case 5:
@@ -57,6 +89,9 @@ public class Spawner : MonoBehaviour
         {
             //make a swirl
         }
+        
+        bm.UpdateBoardState();
+        
     }
 
     private IEnumerator SpawnRocket(int tileId)
@@ -74,6 +109,8 @@ public class Spawner : MonoBehaviour
 
         bm.tileDict[tileId].occupantId = newPiece.pieceId;
         bm.pieceDict.Add(newPiece.pieceId, newPiece);
+        
+        bm.UpdateBoardState();
 
         yield return null;
     }
