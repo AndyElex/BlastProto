@@ -42,9 +42,8 @@ public class Piece_Regular : Piece
         }
     }
 
-    public new void OnMouseUp()
+    public void OnMouseUp()
     {
-        base.OnMouseUp();
         StartCoroutine( _boardManager.ResolveMatch(pieceId));
     }
 

@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Piece : MonoBehaviour
 {
@@ -21,12 +20,6 @@ public class Piece : MonoBehaviour
     {
         return false;
     }
-
-    public void OnMouseUp()
-    {
-        if (GameManager.PaintMode)
-        {
-            GameManager.Instance.boardManager.spawner.PaintPiece(currentTileId);
-        }
-    }
+    
+    
 }
