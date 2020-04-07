@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
     public BoardManager boardManager;
     public static bool PaintMode;
     public GameObject paintObject;
-    
+    public bool powerupResolved;
+
     void Awake()
     {
         if (Instance == null)

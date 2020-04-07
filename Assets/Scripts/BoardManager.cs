@@ -18,10 +18,16 @@ public class BoardManager : MonoBehaviour
     private List<int> searching = new List<int>();
     private List<int> searched = new List<int>();
     public List<Connection> connections = new List<Connection>();
+    public bool powerupResolved;
 
     private void Update()
     {
+       
+       if(!powerupResolved)
+           return;
+       powerupResolved = false;
        UpdateBoardState();
+       StartCoroutine(ResolveBoard());
     }
 
     public void InitGameBoard()

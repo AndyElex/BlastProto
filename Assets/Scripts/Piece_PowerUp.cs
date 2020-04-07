@@ -22,6 +22,7 @@
     private void OnDestroy()
     {
         effect.ResolveEffect();
+        _boardManager.powerupResolved = true;
     }
     
 
