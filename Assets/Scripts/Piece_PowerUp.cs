@@ -15,6 +15,7 @@
     
     private void OnMouseUp()
     {
+        base.OnMouseUp();
         Destroy(transform.gameObject);
         StartCoroutine( _boardManager.ResolveMatch(pieceId));
     }

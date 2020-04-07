@@ -32,8 +32,6 @@ public class Effect_LineBlastVert : Effect
                 bm.DestroyPiece(pieceToDestroy.pieceId);
             }
         }
-        
-        bm.UpdateBoardState();
 
     }
 }

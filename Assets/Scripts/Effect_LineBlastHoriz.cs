@@ -35,7 +35,5 @@ public class Effect_LineBlastHoriz : Effect
             bm.DestroyPiece(pieceToDestroy.pieceId);
             
         }
-        
-        bm.UpdateBoardState();
     }
 }
